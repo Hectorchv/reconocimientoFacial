@@ -13,6 +13,6 @@ while True:
     for (x, y, w, h) in rostro:
         cv2.rectangle(img, (x,y), (x+w, y+h,), (0,255,0), 3)
     cv2.imshow('img', img)
-    if cv2.waitKey(30) == True:
+    if cv2.waitKey(30) == 27:
         break
 cap.release()
